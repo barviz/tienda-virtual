@@ -1,2 +1,5 @@
-# tienda-virtual
-Actividad del Programa ONE, una alianza entre Alura Latam y Oracle
+# Tienda Virtual
+
+## Programa ONE: formación de Front End
+
+Proyecto de front-end donde se desarrolla un sitio web responsivo con CSS Grid.
