@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap');
+
+.app {
+    background: rgb(18, 18, 18);
+    display: grid;  
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-areas: 
+        "header"
+        "contenido"
+        "footer";
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto auto; 
+}
+
+.encabezado {
+    align-items: center;
+    display:flex;
+    grid-area: header;
+    padding: 0 2rem;
+    background-color: #2a2a2a;
+    
+}
+.contenido {
+    grid-area: contenido;
+    padding: 0 2rem;
+}
+
+.rodapie { 
+    background: #2a2a2a;
+    color: #dcdcdc;
+    grid-area: footer;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Duru Sans', sans-serif;
+}

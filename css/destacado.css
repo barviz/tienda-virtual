@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@200&family=Zen+Dots&display=swap');
+.box {
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+}
+
+.destacado {
+    display: grid;
+    grid-gap: .2rem;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    height: calc(100vh - 50px);
+}
+
+.destacado_titulo {
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    background: rgba(0, 0, 0, .5);
+    color: #fdfdfd;
+    padding: .6rem;
+    text-align: center;
+    width: 100%;
+}
+
+.destacado_principal {
+    background: url('../img/fortnite.jpg') center / cover no-repeat;
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+}
+
+.destacado_secundario:nth-child(2) {
+    background: url('../img/resident-evil.jpg') center / cover no-repeat;
+    grid-column: 4 / 4;
+    grid-row: 1 / 1;
+}
+
+.destacado_secundario:nth-child(3) {
+    background: url('../img/slack.png') center / cover no-repeat;
+    grid-column: 4 / 4;
+    grid-row: 2 / 2;
+}
+
+.destacado_secundario:nth-child(4) {
+    background: url('../img/whatsapp.png') center / cover no-repeat;
+    grid-column: 4 / 5;
+    grid-row: 3 / 3;
+}
+
+.destacado_secundario:nth-child(5) {
+    background: url('../img/cs-go.jpg') center / cover no-repeat;
+    grid-column: 3 / 4;
+    grid-row: 3 / 3;
+}
+
+.destacado_categorias {
+    grid-column: 1 / 3;
+    grid-row: 3 / 3;
+}
+
+.destacado_categorias_lista {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-between; 
+}
+
+.destacado_categorias_item {
+    font-family: 'Big Shoulders Inline Text', cursive;
+    font-size: 1rem;
+    align-items: center;
+    background: #2a2a2a;
+    border-left: 3px solid #24e234;
+    color: #e7e7e7;
+    display: flex;
+    padding: 1rem;
+    width: 50%;
+    letter-spacing: 0.05em;
+}
+
+.destacado_categorias_item:hover{
+    font-weight: bold;
+}
+
+.destacado_categorias_link {
+    color: inherit;
+}
+
+.destacado_principal:hover, .destacado_secundario:hover{
+    filter: sepia(30%);
+}
+
+.fa-buromobelexperte:hover, .fa-list-ol:hover, .fa-star:hover, .fa-bell:hover {
+    color: yellow !important;
+}
